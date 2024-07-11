@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaadi card 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+
+  body{
+    background-image: url('img/bg-3.avif');
+    background-size: cover;          /* Cover the entire body */
+    background-repeat: no-repeat;    /* Do not repeat the image */
+    background-position: center;     /* Center the image */
+    background-attachment: fixed;    /* Make the background fixed on scroll */
+  }
+
+/* section 1 start */
+
+    .custom-img {
+        height: 550px;
+        border-radius: 20px;
+        margin-top: 20px;
+        border: 1px solid rgb(82, 35, 82);
+        box-shadow: 0 4px 8px rgba(214, 9, 180, 0.842), 0 6px 20px rgba(185, 27, 151, 0.856);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Ensures text alignment within the container */
+  }
+  
+ 
+
+ /*design for four corner  image start*/
+
+ .wedding-card-container {
+    position: relative;
+  }
+
+  .corner-design {
+    position: absolute;
+    height: 50px; /* Adjust the height as needed */
+    width: 50px; /* Adjust the width as needed */
+  }
+
+  .corner-design.top-left {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+  .corner-design.top-right {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  .corner-design.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  .corner-design.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+   
+  }
+
+  .card {
+    background-color: rgb(173, 98, 98);
+    position: relative;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(82, 35, 82);
+    box-shadow: 0 4px 8px rgba(214, 9, 180, 0.842), 0 6px 20px rgba(185, 27, 151, 0.856);
+   
+  
+  }
+
+  .card img {
+    height: 100px;
+    width: 100px;
+    
+  }
+
+  .mantra, .card-body {
+    text-align: center;
+    color: white;
+  }
+
+  .mantra p, .card-title, .card-text, .card-body h5, .card-body p {
+    margin: 10px 0;
+  }
+  /*design for four corner  image ends*/
+
+/* animation start section 1 */
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.1); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.1); }
+    70% { transform: scale(1); }
+  }
+  
+  .wedding-animate .card {
+    animation: floatIn 1.5s ease-out;
+  }
+  
+  .wedding-animate .card-title,
+  .wedding-animate .card-text,
+  .wedding-animate h5,
+  .wedding-animate p {
+    animation: floatIn 1.5s ease-out;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+  }
+  
+  .wedding-animate .image-container img {
+    animation: heartbeat 2s infinite;
+  }
+  
+  .wedding-animate .corner-design {
+    animation: sparkle 3s infinite;
+  }
+  
+  .wedding-animate .mantra {
+    animation: floatIn 2s ease-out;
+    animation-delay: 1s;
+  }
+
+  /* animation ends section 1 */
+
+  /* section 1 ends */
+
+/* section 2 start */
+
+.Section2{
+  background-color: purple;
+  padding: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+    border: 1px solid rgb(82, 35, 82);
+    box-shadow: 0 4px 8px rgba(214, 9, 180, 0.842), 0 6px 20px rgba(185, 27, 151, 0.856);
+ 
+}
+
+.sec{
+  background-color: rgb(230, 213, 235);
+  padding: 50px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid rgba(230, 78, 68, 0.575); /* Yellow border */
+  box-shadow: 0 0 10px yellow; /* Yellow shadow */
+  border-radius: 10px; /* Optional: Adds rounded corners to the border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.img2{
+  height: 90px;
+  width: 90px;
+  
+}
+.p{
+  font-weight: bold;
+  color: rgb(87, 29, 87);
+}
+/* add hover effect on cards start */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* add hover effect on cards ends */
+
+/* section 2 ends */
+
+/*section 3 start */
+
+.sec3{
+  border: 1px solid rgb(82, 35, 82);
+    box-shadow: 0 4px 8px rgba(214, 9, 180, 0.842), 0 6px 20px rgba(185, 27, 151, 0.856);
+}
+
+.hover-effect .bal {
+  background-color: rgb(230, 213, 235);
+  border-radius: 15px;
+  border: 2px solid rgba(230, 78, 68, 0.575); /* Yellow border */
+  box-shadow: 0 0 10px yellow; /* Yellow shadow */
+  padding: 16px;
+}
+
+.hover-effect .bal:hover {
+  box-shadow: 0 0 20px yellow; /* Intensified shadow on hover */
+}
+
+.hover-effect .p {
+  font-size: 20px;
+}
+/* hover effect start  on smile img*/
+
+.hover-effect img {
+  transition: transform 0.10s ease-in-out;
+}
+
+.hover-effect img:hover {
+  transform: translateX(10px); /* Slide forward */
+}
+
+.hover-effect img:active {
+  transform: translateX(-10px); /* Slide backward */
+}
+/* hover effect ends on smile img*/
+/*section 3 ends */
+  
+/* section 4 start */
+
+.sec4{
+  border: 1px solid rgb(82, 35, 82);
+  box-shadow: 0 4px 8px rgba(214, 9, 180, 0.842), 0 6px 20px rgba(185, 27, 151, 0.856);
+}
+/* section 4 ends*/
+
+/*section 5 start*/
+
+.sec5{
+  border: 2px solid rgba(230, 78, 68, 0.575); /* Border */
+  box-shadow: 0 0 10px yellow; /* Box shadow */
+}
+/*section 5 ends*/
+
+
+</style>
+
+
+</head>
+<body>
+ 
+<!--Section 1 Card start-->
+
+<div class="container-fluid wedding-animate mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/ganeshji.jpg" class="img-fluid custom-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="background-color:  purple; ">
+                    <img src="img/flower-removebg-preview.png" class="corner-design top-left" alt="Corner Design">
+                    <img src="img/flower-removebg-preview.png" class="corner-design top-right" alt="Corner Design">
+                    <img src="img/flower-removebg-preview.png" class="corner-design bottom-left" alt="Corner Design">
+                    <img src="img/flower-removebg-preview.png" class="corner-design bottom-right" alt="Corner Design">        
+        
+                    <div class="image-container">
+                      <img src="img/wedding_img-removebg-preview.png" class="img-fluid rounded-pill" height="100px" width="100px" alt="Wedding Image">
+                  </div>
+                    <div class="mantra text-center text-white">
+                      <p>|| श्री गणेशाय नमः ||<br>
+                        वक्रतुंड महाकाय सूर्यकोटि समप्रभः।<br>
+                        निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white ">Rajesh & Riya</h5>
+                      <p class="card-text text-white text p" >Please celebrate with us the freshness of new life<br>
+                    and new love as we solicit the pleasure of your<br>
+                company with family and friends on the <br>
+            auspicious occasion</p>
+                     <h5 class=" text-white text p">SATURDAY , 21st AUGUST 2023 <br>
+                    AT 5 'O' CLOCK IN THE EVENING </h5>
+        
+                    <h5 class=" text-white text p">Venue<br>
+                    ABC HOUSE, MG Road, Pune-411019</h5>
+        
+                    <p class="text-white text p">Invited By <br>
+                    Borate & Family</p>
+        
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!--Section 1 Card ends-->
+
+
+<!-- Section 2 start -->
+<div class="container-fluid ">
+  <div class="container Section2 mt-5">
+    <div class="row pt-5  pb-5 d-flex justify-content-center align-items-center">
+<div class="col-md-3 sec  hover-effect">
+  <img src="img/haldi-removebg-preview.png" class="img-fluid img2">
+  <h3 class="text-center p">Subh Haldi  </h3>
+  <p class=" p">Date:[27-07-2024]</p>
+  <p class=" p">Time : 5:00 P.M</p>
+  <p class=" p">Menu : Home </p>
+</div>
+<div class="col-md-3 sec  hover-effect">
+  <img src="img/mehendi-removebg-preview.png" class="img-fluid img2" height="80px" width="80px">
+  <h3 class="text-center p">Mehendi  </h3>
+  <p class=" p">Date:[27-07-2024]</p>
+  <p class=" p">Time : 5:00 P.M</p>
+  <p class=" p">Menu : Home </p>
+ 
+</div>
+<div class="col-md-3 sec  hover-effect">
+  <img src="img/subh tilak.png" class="img-fluid img2">
+  <h3 class="text-center p">Subh Tilak</h3>
+  <p class=" p">Date:[27-07-2024]</p>
+  <p class=" p">Time : 5:00 P.M</p>
+  <p class=" p">Menu : Home </p>
+ 
+</div>
+    </div>
+<!-- secand row -->
+<div class="row pt-3 pb-5 d-flex justify-content-center align-items-center">
+  <div class="col-md-3 sec   hover-effect">
+    <img src="img/barat-removebg-preview.png" class="img-fluid img2 ">
+    <h3 class="text-center p">Baraat  </h3>
+    <p class=" p">Date:[27-07-2024]</p>
+    <p class=" p">Time : 5:00 P.M</p>
+    <p class=" p">Menu : Home </p>
+   
+  </div>
+  <div class="col-md-3 sec   hover-effect">
+    <img src="img/subh_vivah-removebg-preview.png" class="img-fluid img2">
+    <h3 class="text-center p">Subh Vivah</h3>
+    <p class=" p">Date:[27-07-2024]</p>
+    <p class=" p">Time : 5:00 P.M</p>
+    <p class=" p">Menu : Home </p>
+   
+  </div>
+
+  <div class="col-md-3 sec   hover-effect">
+    <img src="img/vidai-removebg-preview.png" class="img-fluid img2" >
+    <h3 class="pt-1 text-center p">Vidai</h3>
+    <p class=" p">Date:[27-07-2024]</p>
+    <p class=" p">Time : 5:00 P.M</p>
+    <p class=" p">Menu : Home </p>
+   
+  </div>
+  
+</div>
+
+  </div>
+</div>
+<!-- Section 2 start -->
+
+<!-- section 3 start -->
+<div class="container sec3 mt-3 p-5 mt-5" style="background-color: purple;   border-radius: 15px;">
+  <div class="row text-white d-flex justify-content-center align-items-center"  >
+    <div class="col-md-12  hover-effect">
+<div class="bal p-4" style="background-color:  rgb(230, 213, 235);  border-radius: 15px;">
+<p class="p" style="font-size: 20px;">How did our little feet come to forget us? Don't forget to come to uncle's wedding.</p>
+<div style="text-align: right;" >
+  <h5 style="display: inline; margin-right: 10px; color:purple; font-weight:bold;" >Ayush, Mahi</h5>
+  <img src="img/smile_img-removebg-preview (1).png" height="50px" width="50px" style="vertical-align: middle;">
+</div>
+
+</div>
+    </div>
+  
+   
+  </div>
+</div>
+
+<!-- section 3 ends -->
+
+
+<!-- section 4 start -->
+<div class="container mt-5 p-5 sec4" style="background-color: purple;   border-radius: 15px;">
+  <div class="row text-white"  style="display: flex; justify-content-space: between; align-items: center;">
+    <p></p>
+    
+    <div class="col-md-12 hover-effect">
+<div class="bal p-3" style="background-color:  rgb(230, 213, 235);">
+<div class="row">
+  <div class="col-md-3">
+    <p class="p">Dear relative,</p>
+  </div>
+  <div class="col-md-3 mt-5">
+    <p class="p">By God's infinite mercy</p>
+  </div>
+</div>
+<!-- doli start -->
+<div class="row mt-5 text-center align-items-center">
+  <div class="col-md-3">
+    <p class="p">DESIROUS OF SEEING,<br></p>
+    <p class="p">
+      Ashish Garg<br>
+      Hemlata Garg<br>
+      Vinay Agarwal
+    </p>
+  </div>
+  <div class="col-md-6">
+    <img src="img/couple 1.png" class="img-fluid" style="max-height: 70%; max-width: 70%;">
+  </div>
+  <div class="col-md-3">
+    <p class="p">WELCOMING</p>
+    <p class="p">
+      Arvind Singhal<br>
+      Radha Singhal
+    </p>
+  </div>
+</div>
+<!-- doli end -->
+</div>
+    </div>
+  </div>
+</div>
+<!-- section 4 ends -->
+
+<!-- section 5 start  -->
+<div class="container mt-5 p-5 sec4 " style="background-color: purple;   border-radius: 15px;">
+  <div class="row text-white text-center d-flex justify-content-between"  style="display: flex; justify-content-space: between; align-items: center;">
+   
+    <div class="col-md-5 hover-effect sec5" style="background-color:  rgb(230, 213, 235);  border-radius: 15px;">
+      <h2 class="pt-5 " style="color: rgb(87, 29, 87); font-weight:bold;">Address</h2>
+      <p class="pt-4 p">Hotel SAYAJI, MAGENTO MALL<BR>
+        AVANTI VIHAR , RAIPUR<BR>
+        CHATTISGARH
+      </p>
+      <div class="social-icons pb-3" style="margin-top: 20px;">
+        <a href="https://facebook.com" style="margin-right: 10px; text-decoration: none; ">
+          <i class="fab fa-facebook-f" style="font-size: 24px; color:purple"></i>
+        </a>
+        <a href="https://twitter.com" style="margin-right: 10px; text-decoration: none; ">
+          <i class="fab fa-twitter" style="font-size: 24px; color:purple"></i>
+        </a>
+        <a href="https://instagram.com" style="margin-right: 10px; text-decoration: none; ">
+          <i class="fab fa-instagram" style="font-size: 24px; color:purple"></i>
+        </a>
+        <a href="https://linkedin.com" style="margin-right: 10px; text-decoration: none; ">
+          <i class="fab fa-linkedin-in" style="font-size: 24px; color:purple"></i>
+        </a>
+      </div>
+</div>
+
+<div class="col-md-5 p-3 hover-effect text-center mt-2  sec5" style="background-color:  rgb(230, 213, 235); border-radius: 15px;">
+<h2 class="pb-2" style="color: rgb(87, 29, 87); font-weight:bold;">Contact Us</h2>
+<p class="p"><i class="fa fa-phone " style="font-size:24px"></i>+91 959626458</p>
+<p class="p"><i class="fa fa-phone" style="font-size:24px"></i>+91 859626458</p>
+<p class="p"><i class="fa fa-phone" style="font-size:24px"></i> +91 759626458</p>
+<p class="p"><i class="fa fa-phone" style="font-size:24px"></i>+91 881654233</p>
+
+</div>
+
+</div>
+    </div>
+  
+<!-- section 5  ends -->
+
+<!-- section 6 start -->
+<div class="container mt-5 mb-5">
+ 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.7952471245617!2d80.27712277442508!3d26.494536677938314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1715423230207!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+ 
+</div>
+
+<!-- section 6 ends-->
+</body>
+</html>
